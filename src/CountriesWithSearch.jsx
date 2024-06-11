@@ -12,7 +12,7 @@ function App() {
   }, []);
 
   const filteredCountries = countries.filter((country) =>
-    country.name.common.toLowerCase().includes(searchTerm.toLowerCase())
+    country.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   const cardStyle = {
