@@ -5,7 +5,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all")
+    fetch("https://xcountries-backend.azurewebsites.net/all")
       .then((response) => response.json())
       .then((data) => setCountries(data))
       .catch((error) => console.error("Error fetching data: ", error));
