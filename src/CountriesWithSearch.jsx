@@ -11,10 +11,9 @@ function App() {
       .catch((error) => console.error("Error fetching data: ", error));
   }, []);
 
-  const filteredCountries = countries.filter((country) => {
-    console.log(searchTerm);
-    return country.name.toLowerCase().includes(searchTerm.toLowerCase())
-  });
+  const filteredCountries = countries.filter((country) => 
+    country.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   const cardStyle = {
     width: "200px",
